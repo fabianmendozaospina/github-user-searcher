@@ -24,7 +24,11 @@ export const handler: Handlers = {
 export default function Github({ data }: PageProps) {
   return (
     <Layout>
-      <SearchGithubUser />
+      <div class="flex justify-content-center">
+        <div class="m-auto">
+          <SearchGithubUser />
+        </div>
+      </div>
     </Layout>
   );
 }

@@ -30,20 +30,30 @@ export default function SearchGithubUser() {
         <form onSubmit={onSubmit}>
           <input
             type="text"
+            class="border rounded shadow-md px-4 py-2 w-72"
             name="username"
             value={username}
             onChange={handleInput}
             placeholder="Search Github user by username"
           />
-          <button type="submit">Search</button>
+          <button
+            class="border rounded shadow-md px-4 py-2 bg-green-700 text-white ml-4"
+            type="submit"
+          >
+            Search
+          </button>
         </form>
       </section>
       {user?.name &&
         (
-          <section>
+          <section class="mt-10">
             <a href={user.html_url} target="_blank"></a>
-            <p>{user.login}</p>
-            <img src={user.avatar_url} alt={user.login} />
+            <p class="text-2xl text-center">Username: {user.login}</p>
+            <img
+              class="border rounded shadow-md w-34 h-34"
+              src={user.avatar_url}
+              alt={user.login}
+            />
           </section>
         )}
     </>
