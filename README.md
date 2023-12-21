@@ -1,2 +1,2 @@
 # github-user-searcher
-Github User Searcher using Deno Fresh
+Github user searcher using Deno Fresh.
